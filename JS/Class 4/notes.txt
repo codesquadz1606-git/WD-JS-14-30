@@ -1,0 +1,43 @@
+What is String?
+A set of Characters in "" is known as string.
+String is based on zero base indices.
+
+What is Zero base indexing?
+Starts from 0 and goes till length-1.
+
+String Functions:
+--> startsWith
+--> endsWith
+--> toUpperCase
+--> toLowerCase
+--> slice(start,end)=> end-1 TKK JAYGAA
+--> replace
+--> concat
+--> charAt
+--> split : converts string to array.
+--> trim 
+
+
+What is array?
+A data structure that stores the data at continous memory location.
+We can store any type of value.
+
+Array works on zero based indexing.
+
+Array Functions
+--> push : Add any element at the end of the array.
+--> pop : Remove from the end
+--> shift : Remove at the starting
+--> unshift : Add from starting
+
+--> splice() :start,no.ofdelete,elemtAdd
+
+--> concat
+--> sort
+--> reverse
+--> join
+--> slice
+--> indexOf
+--> includes
+
+Advance Methods : find,map,reduce,some,every
