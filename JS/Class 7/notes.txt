@@ -1,0 +1,21 @@
+How to create the HTML element through JS?
+createElement("tag-name")
+
+How we can put JS element to webpage?
+.append() : It means add at the last
+.prepend() : It means add at the start
+.appendChild() : same as append
+.insertAdjacentElement(where,what)
+where : afterbegin,afterend,beforebegin,beforeend
+
+How to handle any click events in the page?
+onclick : which works on HTML
+addEventListener
+
+How we can handle data of input tag?
+Here we found data at value keyword.
+
+How we can handle the form?
+form ka eevent listener hotaa h : onSubmit
+It refresh itself on submit.
+To stop that referesh we use : preventDefault()

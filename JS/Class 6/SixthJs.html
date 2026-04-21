@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .color{
+        color: white;
+    }
+
+    .bg{
+        background-color: red;
+    }
+
+    .font{
+        font-size: 6rem;
+    }
+</style>
+<body>
+    
+    <h1>
+        Hello Everyone
+    </h1>
+    <script>
+        // What is Functions?
+        // A block of code that is executed whenever it is called.
+
+        // Syntax
+        // function func_name(){
+            // code
+        // }
+
+        // func_name() // call
+
+        // function greet(){
+        //     console.log("hello Everyone");
+        // }
+
+        // greet()
+
+        // What is iife?
+        // immediate invoke function expression.
+
+        // (function greet(){
+        //     console.log("hello Everyone");
+        // })()
+
+        // What are the scopes of the function?
+        // Their three types of scopes:
+        // 1. Global Scope : 
+        // let a=10;
+        // function call(){
+        //     console.log(a)
+        // }
+
+        // call()
+
+        // 2. Block Scope
+        // {
+        //     let b=10;
+        // }
+        // console.log(b)
+
+        // 3. Function Scope
+        // function intro(){
+        //     let name="Ayush Kumar"
+        // }
+
+        // console.log(name);
+
+        // 3. Lexical Scope / What is Closures?
+
+        // function outerFun(){ // in this scope child func can access value of parent function.
+        //     let a=10;
+        //     function innerFunc(){
+        //         let b=20;
+        //         console.log(a+b)
+        //     }
+        //     innerFunc()
+        // }
+
+        // Type of Functions:
+        // 1. Normal Function
+        // 2. Parmeterised & Argument Function
+        // function add(a,b){
+        //     console.log(a+b)
+        // }
+
+        // add(10,20);
+        // add(11,20);
+        // add(12,20);
+        // add(13,20);
+
+        // 3. returning function
+        // return keyword : Where the value is directly assigned to a function.
+        // function add(a,b){
+        //     return a+b
+        // }
+
+        // 4. Default Parameter Function.
+        // function employee(name,city="Delhi"){
+        //     console.log(name,city)
+        // }
+
+        // employee("Ayush")
+        // employee("Anil")
+        // employee("Anish","Noida")
+
+        // 5. Variable FUnction Expression
+        // let detail=function(name,city){
+        //     console.log(name,city)
+        // }
+
+        // detail("Nishant","Gurgaon")
+
+        // 6. Arrow Function
+        // let detail=()=>{
+        //     console.log("Arrow Function")
+        // }
+
+
+        // How we can create styling? // inline css
+        // variable.style.propertName
+        let h1=document.querySelector("h1")
+
+        // h1.style.backgroundColor="red"
+        // h1.style.color="white"
+
+        // What is getter & setter?
+        // getAttribute & setAttribute
+
+        // console.log(h1.getAttribute("class")) // this get me a value of attribute
+        // h1.setAttribute("class","font")
+
+        // Here setAttribute overlaps all the old values.
+
+        // What is class List?
+        // .add,.remove,.contains,.toggle
+        h1.classList.add("bg")
+        h1.classList.add("color")
+        h1.classList.add("font")
+
+        h1.classList.remove("font")
+
+        h1.classList.toggle("font")
+        h1.classList.toggle("font")
+        h1.classList.toggle("font")
+        h1.classList.toggle("font")
+
+        console.log(h1.classList.contains("font"))
+
+
+    </script>
+</body>
+</html>
