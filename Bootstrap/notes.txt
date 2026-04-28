@@ -1,0 +1,55 @@
+color name : 
+primary : blue
+secondary : grey
+warning : yellow
+danger : red
+dark : black
+info : skyblue
+
+class : 
+background : bg
+font : text
+padding : p
+margin : m
+
+numbers : 1 to 5
+
+For padding
+
+four sides :
+pt : padding-top
+pb : padding-bottom
+ps : padding-left
+pe : padding-right
+
+two sides :
+py : padding top & bottom
+px : padding left & right
+
+For margin
+four sides :
+mt : margin-top
+mb : margin-bottom
+ms : margin-left
+me : margin-right
+
+two sides :
+my : margin top & bottom
+mx : margin left & right
+
+border-radius : rounded-number
+
+flex : d-flex
+gap : gap-number
+jc : justify-content-center/evenly/between......
+
+
+rows & columns
+1 row  = 12 columns
+
+Responsive design 
+xxl : >= 1400px
+xl : 1399 to 1200px
+lg : 1199 to 992px
+md : 991 to 768px
+sm : 767 to 576px
