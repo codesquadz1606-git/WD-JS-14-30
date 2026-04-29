@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+    }
+</style>
+<body>
+    
+    <!-- <div class="box"></div> -->
+    <h1>0 Facts</h1>
+    <button onclick="fact()">Create Fact</button>
+
+    <div class="facts">
+
+    </div>
+    <script>
+        function dataSave(data){
+            return new Promise((res,rej)=>{
+                let internetSpeed=Math.ceil(Math.random()*10);
+    
+                if(internetSpeed>4){
+                    res(internetSpeed)
+                }
+                else{
+                    rej(internetSpeed)
+                }
+            })
+        }
+
+        // dataSave("Tarun")
+        // .then((s)=>{
+        //     console.log("Data 1 Saved",s);
+        //     return dataSave("Nikhil")
+        // })
+        // .then((s)=>{
+        //     console.log("Data 2 Saved",s)
+        //     return dataSave("Ritik")
+        // })
+        // .then((s)=>{
+        //     console.log("Data 3 Saved",s)
+        // })
+        // .catch((e)=>{ // single catch can handle multiple then()
+        //     console.log("Error in saving",e)
+        // })
+
+
+        // async function greet(){
+        //     console.log("Hello")
+        // }
+
+
+        // async function calls(){
+        //     await dataSave("Dheeraj")
+        // }
+
+        // let box=document.querySelector(".box")
+        // function colorChange(color,time){
+        //     return new Promise((res,rej)=>{
+        //         setTimeout(()=>{
+        //             res();
+        //             box.style.backgroundColor=color
+        //         },time)
+        //     })
+        // }
+
+        // async function changes(){
+        //     await colorChange("green",0)
+        //     await colorChange("red",2000)
+        //     await colorChange("yellow",2000)
+        //     await colorChange("blue",2000)
+        // }
+
+        // changes()
+
+        // let url="https://jsonplaceholder.typicode.com/posts"
+
+        // fetch(url)
+        // .then((res)=>{
+        //     console.log(res) // this data is in non-readable format.
+        //     return res.json(); // promise
+        // })
+        // .then((data)=>{
+        //     console.log(data)
+        // })
+        // .catch((err)=>{
+        //     console.log(err)
+        // })
+
+
+        let url="https://catfact.ninja/fact"
+        let ul=document.createElement("ul")
+        let facts=document.querySelector(".facts")
+        let h1=document.querySelector("h1")
+        function fact(){
+            fetch(url)
+            .then((res)=>{
+                return res.json();
+            })
+            .then((data)=>{
+                let li=document.createElement("li")
+                li.innerHTML=`<b>Fact :</b> ${data.fact}`
+                console.log(data)
+                ul.append(li)
+                h1.innerText=`${ul.children.length} Facts`
+            })
+            .catch((err)=>{
+                console.log(err)
+            })
+        }
+        facts.append(ul)
+    </script>
+</body>
+</html>

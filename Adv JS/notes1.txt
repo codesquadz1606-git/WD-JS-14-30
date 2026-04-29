@@ -1,0 +1,24 @@
+What is Promises?
+Promises is asynchronous code where the final result is succeded or failed.
+
+How we can handle the promise?
+Promises are handled by : then() & catch()
+
+What is async & await?
+Async : It means we can convert any normal function into the promise function.
+
+Await : It is used to handle the promises, but only used when their is async in the function.
+
+What is API?
+Api stands for Application Programming Interface.
+
+For Api we have two methods :
+1. fetch() JS built in method
+2. Axios is library.
+
+What is fetch()?
+fetch() is a method which is used call an api.
+It is a promise.
+
+What is lifecycle of fetching an api?
+fetch(url)---> return reablestream--> used .json()method --> .then() for .json() method.
