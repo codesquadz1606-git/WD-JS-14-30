@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <div class="box"></div>
+
+
+    <script>
+        // function one(){
+        //     return 1;
+        // }
+
+        // function two(){
+        //     return one()+one()
+        // }
+
+        // function three(){
+        //     return two()+one()
+        // }
+
+        // three()
+
+
+        // console.log("Hello")
+        // console.log("Hello1")
+        // console.log("Hello12")
+        // console.log("Hello13")
+
+        // What is setTimeout?
+        // Syntax
+        // setTimeout(callback,delay)
+        
+        
+        // console.log("Hello");
+        
+        // setTimeout(()=>{ // this is handled by browser.
+        //     console.log("This is Set Timeout")
+        // },3000)
+        
+        // console.log("Set Timeout Finished")
+        
+        // What is setInterval?
+        // It will execute itself again & again after a setTime.
+        
+        // setInterval(callback,delay)
+
+        // let id=setInterval(()=>{
+        //     console.log("This is Set Interval")
+        // },2000)
+
+        // To stop any interval we use clearInterval()
+
+        // setTimeout(()=>{
+        //     clearInterval(id)
+        // },12000)
+
+        // let box = document.querySelector(".box")
+
+        // function colorChange(color,time,nextcolor){
+        //     setTimeout(()=>{
+        //         if(nextcolor) nextcolor();
+        //         box.style.backgroundColor=color
+        //     },time)
+        // }
+
+        // colorChange("red",2000,()=>{
+        //     colorChange("blue",2000,()=>{
+        //         colorChange("yellow",2000)
+        //     })
+        // })
+
+
+        // In my database I am saving the details & if network is slow so it is giving me a error.
+
+        function dataSave(data,success,failure){
+            let internetSpeed=Math.ceil(Math.random()*10);
+
+            if(internetSpeed>4){
+                success(internetSpeed)
+            }
+            else{
+                failure(internetSpeed)
+            }
+        }
+
+        dataSave("Karan",(s)=>{
+            console.log("Data 1 Saved",s);
+            dataSave("Shivam",(s)=>{
+                console.log("Data 2 Saved",s)
+                dataSave("Ritik",(s)=>{
+                    console.log("Data 3 Saved",s)
+                },(s)=>{
+                    console.log("Error In saving",s)
+                })
+            },(s)=>{
+                console.log("Error in saving",s)
+            })
+        },(s)=>{
+            console.log("Error in saving",s)
+        })
+        
+
+    </script>
+</body>
+</html>

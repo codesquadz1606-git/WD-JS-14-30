@@ -1,0 +1,16 @@
+What is call stack?
+Call Stack Means tracking all the calls that are made.
+
+Diffrence b/w Synchronous & Asynchronous?
+Synchronous means executing code line by line.
+
+Asynchronous means their is some wait time in the code.
+
+Examples : setTimeout,setInterval, Api calls, Promises.
+
+Is JS Single threaded?
+Js is single threaded because it only handles the Synchronous code.
+Asynchronous Code is handled by browser.
+
+What is Callback hell?
+It is a callback inside anthor callback and so on.
