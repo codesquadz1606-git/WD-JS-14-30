@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: beige;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.outerdiv{
+    margin-top: 20px;
+    width: 300px;
+    height: 480px;
+    background-color: beige;
+    border-radius: 40px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.p_cart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.addtocart{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+.price{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
